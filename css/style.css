@@ -21,16 +21,16 @@ header {
 
 /* navigation menu*/
 
-.nav .nav-item {
+.nav a {
   color: var(--dark);
 }
 
-.nav-item.active {
+.nav a.active {
   color: var(--blue);
 }
 
-.nav-item:hover,
-.nav-item:focus {
+.nav a:hover,
+.nav a:focus {
   color: var(--blue);
 }
 
@@ -48,6 +48,11 @@ header {
   background-color: var(--bg-dark);
 }
 .hero .header {
+  color: var(--white);
+}
+
+.button {
+  background-color: var(--blue);
   color: var(--white);
 }
 
@@ -102,7 +107,7 @@ footer {
   color: var(--white);
 }
 
-.address,
+.address p,
 .address a {
   color: var(--white);
 }
@@ -114,8 +119,27 @@ footer {
 .address a:focus {
   color: var(--blue);
 }
-/* common */
-.button {
+
+/* potfolio filter */
+.filter-item {
+  background-color: var(--bg-light);
+  color: var(--dark);
+}
+
+.filter-item:hover,
+.filter-item:focus,
+.filter-item.active {
   background-color: var(--blue);
   color: var(--white);
+}
+/* portfolio item */
+.portfolio-item {
+  background-color: var(--white);
+}
+
+.portfolio-item h2 {
+  color: var(--dark);
+}
+.portfolio-item p {
+  color: var(--light);
 }
