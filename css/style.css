@@ -1,0 +1,38 @@
+:root {
+  --blue: #2196f3;
+  --dark: #212121;
+  --light: #757575;
+  --white: #ffffff;
+}
+
+/* logo */
+.logo span {
+  color: var(--blue);
+}
+.logo {
+  color: var(--dark);
+}
+
+/* navigation menu*/
+
+.nav .nav-item {
+  color: var(--dark);
+}
+
+.nav-item.active {
+  color: var(--blue);
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--blue);
+}
+
+/* contacts */
+.contacts .contacts-item {
+  color: var(--light);
+}
+.contacts-item:hover,
+.contacts-item:focus {
+  color: var(--blue);
+}
