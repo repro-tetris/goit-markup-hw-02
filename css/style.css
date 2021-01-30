@@ -3,6 +3,12 @@
   --dark: #212121;
   --light: #757575;
   --white: #ffffff;
+  --bg-dark: #2f303a;
+  --bg-light: #f5f4fa;
+}
+
+header {
+  background-color: var(--white);
 }
 
 /* logo */
@@ -35,4 +41,81 @@
 .contacts-item:hover,
 .contacts-item:focus {
   color: var(--blue);
+}
+
+/* hero */
+.hero {
+  background-color: var(--bg-dark);
+}
+.hero .header {
+  color: var(--white);
+}
+
+/* advantages */
+
+.advantages {
+  background-color: var(--white);
+}
+
+.advantages-item h3 {
+  color: var(--dark);
+}
+
+.advantages-item p {
+  color: var(--light);
+}
+
+/* what we do */
+.we-do {
+  background-color: var(--white);
+}
+
+.we-do h2 {
+  color: var(--dark);
+}
+
+/* our command */
+.our-command {
+  background-color: var(--bg-light);
+}
+
+.our-command h2 {
+  color: var(--dark);
+}
+
+.command-item {
+  background-color: var(--white);
+}
+.command-item h3 {
+  color: var(--dark);
+}
+.command-item p {
+  color: var(--light);
+}
+
+/* footer */
+footer {
+  background-color: var(--bg-dark);
+}
+
+.logo.white {
+  color: var(--white);
+}
+
+.address,
+.address a {
+  color: var(--white);
+}
+
+.address a {
+  opacity: 0.6;
+}
+.address a:hover,
+.address a:focus {
+  color: var(--blue);
+}
+/* common */
+.button {
+  background-color: var(--blue);
+  color: var(--white);
 }
