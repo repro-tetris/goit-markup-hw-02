@@ -7,8 +7,10 @@
   --bg-light: #f5f4fa;
 }
 
-header {
-  background-color: var(--white);
+h1,
+h2,
+h3 {
+  color: var(--dark);
 }
 
 /* logo */
@@ -62,10 +64,6 @@ header {
   background-color: var(--white);
 }
 
-.advantages-item h3 {
-  color: var(--dark);
-}
-
 .advantages-item p {
   color: var(--light);
 }
@@ -75,25 +73,15 @@ header {
   background-color: var(--white);
 }
 
-.we-do h2 {
-  color: var(--dark);
-}
-
 /* our command */
 .our-command {
   background-color: var(--bg-light);
 }
 
-.our-command h2 {
-  color: var(--dark);
-}
-
 .command-item {
   background-color: var(--white);
 }
-.command-item h3 {
-  color: var(--dark);
-}
+
 .command-item p {
   color: var(--light);
 }
@@ -137,9 +125,6 @@ footer {
   background-color: var(--white);
 }
 
-.portfolio-item h2 {
-  color: var(--dark);
-}
 .portfolio-item p {
   color: var(--light);
 }
