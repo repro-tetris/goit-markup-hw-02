@@ -6,23 +6,52 @@
   --bg-dark: #2f303a;
   --bg-light: #f5f4fa;
 }
+/* ----------- reset styles ----------- */
+a,
+address {
+  text-decoration: none;
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+}
+/*  ----------- common styles ----------- */
+body,
+button {
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
 
 h1,
 h2,
 h3 {
   color: var(--dark);
 }
+h2 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 36px;
+}
 
-/* logo */
+/* ----------- logo ----------- */
+.logo {
+  color: var(--dark);
+  font-family: "Raleway", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+}
 .logo span {
   color: var(--blue);
 }
-.logo {
-  color: var(--dark);
+
+/* ----------- navigation menu ----------- */
+.nav {
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
-
-/* navigation menu*/
-
 .nav a {
   color: var(--dark);
 }
@@ -36,57 +65,81 @@ h3 {
   color: var(--blue);
 }
 
-/* contacts */
+/* ----------- contacts ----------- */
+.contacts {
+  letter-spacing: 0.02em;
+}
 .contacts .contacts-item {
   color: var(--light);
 }
+
 .contacts-item:hover,
 .contacts-item:focus {
   color: var(--blue);
 }
 
-/* hero */
+/* ----------- hero ----------- */
+
 .hero {
   background-color: var(--bg-dark);
 }
-.hero .header {
+.hero .title {
   color: var(--white);
+  font-size: 44px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .button {
   background-color: var(--blue);
   color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
 }
 
-/* advantages */
+/* ----------- advantages ----------- */
 
 .advantages {
+  color: var(--light);
   background-color: var(--white);
 }
-
-.advantages-item p {
-  color: var(--light);
+.advantages-item .title {
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.14;
 }
 
-/* what we do */
+/* ----------- what we do ----------- */
+
 .we-do {
   background-color: var(--white);
 }
 
-/* our command */
+/* ----------- our command ----------- */
+
 .our-command {
   background-color: var(--bg-light);
 }
 
 .command-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.19;
+  text-align: center;
   background-color: var(--white);
-}
-
-.command-item p {
   color: var(--light);
 }
 
-/* footer */
+.command-item .title {
+  font-weight: 500;
+}
+
+/* ----------- footer ----------- */
+
 footer {
   background-color: var(--bg-dark);
 }
@@ -95,21 +148,27 @@ footer {
   color: var(--white);
 }
 
-.address p,
+.address,
 .address a {
   color: var(--white);
+  line-height: 1.71;
 }
 
 .address a {
   opacity: 0.6;
 }
+
 .address a:hover,
 .address a:focus {
   color: var(--blue);
 }
 
-/* potfolio filter */
+/* ----------- potfolio filter ----------- */
+
 .filter-item {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
   background-color: var(--bg-light);
   color: var(--dark);
 }
@@ -120,11 +179,19 @@ footer {
   background-color: var(--blue);
   color: var(--white);
 }
-/* portfolio item */
+
+/* ----------- portfolio item ----------- */
+
 .portfolio-item {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--light);
   background-color: var(--white);
 }
-
-.portfolio-item p {
-  color: var(--light);
+.portfolio-item .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+  letter-spacing: 0.06em;
 }
