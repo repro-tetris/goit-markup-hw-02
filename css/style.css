@@ -1,39 +1,20 @@
+/* #region Variables */
 :root {
-  --blue: #2196f3;
-  --dark: #212121;
-  --light: #757575;
-  --white: #ffffff;
-  --bg-dark: #2f303a;
-  --bg-light: #f5f4fa;
+  --main-color-blue: #2196f3;
+  --main-color-darkgrey: #212121;
+  --main-color-lightgrey: #757575;
+  --button-bg: #f5f4fa;
+  --white-color: #ffffff;
 }
-/* ----------- reset styles ----------- */
-a,
-address {
-  text-decoration: none;
-  font-style: normal;
-}
+/* #endregion */
 
-ul {
-  list-style: none;
-}
-/*  ----------- common styles ----------- */
-body,
-button {
+/* #region Common styles */
+body {
   font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-h1,
-h2,
-h3 {
-  color: var(--dark);
-}
-h2 {
-  font-weight: 700;
-  text-align: center;
-  font-size: 36px;
+  font-size: 14px;
+  /* !IMPORTANT remove */
+  color: aqua;
 }
 
 .visually-hidden {
@@ -50,162 +31,199 @@ h2 {
   overflow: hidden;
 }
 
-/* ----------- logo ----------- */
+/* #endregion */
+
+/* #region HEADER */
 .logo {
-  color: var(--dark);
   font-family: "Raleway", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
   font-size: 26px;
-}
-.logo span {
-  color: var(--blue);
+  color: #000000;
+  text-decoration: none;
 }
 
-/* ----------- navigation menu ----------- */
+.logo span {
+  color: var(--main-color-blue);
+}
+
 .nav {
+  list-style: none;
+}
+
+.nav-link {
   font-weight: 500;
   letter-spacing: 0.02em;
+  color: var(--main-color-darkgrey);
+  text-decoration: none;
 }
-.nav-item {
-  color: var(--dark);
-}
-
-.nav-item.active {
-  color: var(--blue);
+.nav-link.active {
+  color: var(--main-color-blue);
 }
 
-.nav-item:hover,
-.nav-item:focus {
-  color: var(--blue);
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--main-color-blue);
 }
 
-/* ----------- contacts ----------- */
 .contacts {
+  list-style: none;
+}
+
+.contacts-link {
+  font-weight: 500;
   letter-spacing: 0.02em;
-}
-.contacts .contacts-item {
-  color: var(--light);
-}
-
-.contacts-item:hover,
-.contacts-item:focus {
-  color: var(--blue);
+  text-decoration: none;
+  color: var(--main-color-lightgrey);
 }
 
-/* ----------- hero ----------- */
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--main-color-blue);
+}
 
+/* #endregion */
+
+/* #region HERO */
 .hero {
-  background-color: var(--bg-dark);
+  background-color: #2f303a;
 }
+
 .hero-title {
-  color: var(--white);
   font-size: 44px;
   font-weight: 900;
-  text-transform: uppercase;
   line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-}
-
-.hero-button {
-  background-color: var(--blue);
-  color: var(--white);
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-}
-
-/* ----------- advantages ----------- */
-
-.advantages {
-  color: var(--light);
-  background-color: var(--white);
-}
-.advantages-subtitle {
-  font-weight: 700;
   text-transform: uppercase;
-  line-height: 1.14;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
 }
-
-/* ----------- what we do ----------- */
-
-.we-do {
-  background-color: var(--white);
-}
-
-/* ----------- our command ----------- */
-
-.our-command {
-  background-color: var(--bg-light);
-}
-
-.command-item {
+.hero-button {
   font-size: 16px;
-  font-weight: 400;
-  line-height: 1.19;
-  text-align: center;
-  background-color: var(--white);
-  color: var(--light);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--main-color-blue);
+
+  border: none;
+}
+/* #endregion */
+
+/* #region ADVANTAGES */
+.advantages-list {
+  list-style: none;
+}
+.advantages-title {
+  color: var(--main-color-darkgrey);
+  text-transform: uppercase;
+}
+.advantages-text {
+  color: var(--main-color-lightgrey);
+  line-height: 1.71;
+}
+/* #endregion */
+
+/* #region WHAT WE DO */
+.wedo-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--main-color-darkgrey);
+}
+
+.wedo-list {
+  list-style: none;
+}
+/* #endregion */
+
+/* #region OUR COMMAND */
+.command {
+  background-color: #f5f4fa;
+}
+
+.command-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--main-color-darkgrey);
+}
+
+.command-list {
+  list-style: none;
 }
 
 .command-subtitle {
+  font-size: 16px;
   font-weight: 500;
+  color: var(--main-color-darkgrey);
 }
 
-/* ----------- footer ----------- */
+.command-text {
+  font-size: 16px;
+  color: var(--main-color-lightgrey);
+}
+/* #endregion */
 
-footer {
-  background-color: var(--bg-dark);
+/* #region FOOTER */
+.footer {
+  background-color: #2f303a;
 }
 
 .logo.white {
-  color: var(--white);
+  color: var(--white-color);
+}
+.address-list {
+  list-style: none;
 }
 
-.address,
-.address-link {
-  color: var(--white);
-  line-height: 1.71;
+.address-item {
+  font-style: normal;
+  text-decoration: none;
+  color: var(--white-color);
 }
 
-.address-link {
+.address-item:hover,
+.address-item:focus {
+  text-decoration: underline;
+}
+
+.opacity06 {
   opacity: 0.6;
 }
+/* #endregion */
 
-.address-link:hover,
-.address-link:focus {
-  color: var(--blue);
+/* #region PORTFOLIO FILTER */
+.filter-list {
+  list-style: none;
 }
 
-/* ----------- potfolio filter ----------- */
-
-.filter-item {
+.filter-btn {
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.62;
-  background-color: var(--bg-light);
-  color: var(--dark);
+  color: var(--main-color-darkgrey);
+  background-color: #f5f4fa;
+  border: none;
 }
 
-.filter-item:hover,
-.filter-item:focus,
-.filter-item.active {
-  background-color: var(--blue);
-  color: var(--white);
+.filter-btn:hover,
+.filter-btn:focus,
+.filter-btn.active {
+  color: var(--white-color);
+  background-color: var(--main-color-blue);
+}
+/* #endregion */
+
+/* #region PORTFOLIO */
+.portfolio-list {
+  list-style: none;
 }
 
-/* ----------- portfolio item ----------- */
-
-.portfolio-item {
-  font-size: 16px;
-  line-height: 1.88;
-  color: var(--light);
-  background-color: var(--white);
-}
 .portfolio-subtitle {
-  font-weight: 700;
   font-size: 18px;
-  line-height: 2;
-  text-align: left;
+  font-weight: 700;
   letter-spacing: 0.06em;
+  color: var(--main-color-darkgrey);
 }
+
+.portfolio-text {
+  font-size: 16px;
+  color: var(--main-color-lightgrey);
+}
+/* #endregion */
