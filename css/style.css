@@ -5,6 +5,8 @@
   --main-color-lightgrey: #757575;
   --button-bg: #f5f4fa;
   --white-color: #ffffff;
+  --bg-dark: #2f303a;
+  --bg-light: #f5f4fa;
 }
 /* #endregion */
 
@@ -13,8 +15,6 @@ body {
   font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
-  /* !IMPORTANT remove */
-  color: aqua;
 }
 
 .visually-hidden {
@@ -85,7 +85,7 @@ body {
 
 /* #region HERO */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--bg-dark);
 }
 
 .hero-title {
@@ -102,8 +102,11 @@ body {
   letter-spacing: 0.06em;
   color: var(--white-color);
   background-color: var(--main-color-blue);
-
   border: none;
+}
+
+.hero-button:hover {
+  cursor: pointer;
 }
 /* #endregion */
 
@@ -135,7 +138,7 @@ body {
 
 /* #region OUR COMMAND */
 .command {
-  background-color: #f5f4fa;
+  background-color: var(--bg-light);
 }
 
 .command-title {
@@ -162,7 +165,7 @@ body {
 
 /* #region FOOTER */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--bg-dark);
 }
 
 .logo.white {
@@ -176,11 +179,6 @@ body {
   font-style: normal;
   text-decoration: none;
   color: var(--white-color);
-}
-
-.address-item:hover,
-.address-item:focus {
-  text-decoration: underline;
 }
 
 .opacity06 {
@@ -198,7 +196,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   color: var(--main-color-darkgrey);
-  background-color: #f5f4fa;
+  background-color: var(--bg-light);
   border: none;
 }
 
@@ -207,6 +205,7 @@ body {
 .filter-btn.active {
   color: var(--white-color);
   background-color: var(--main-color-blue);
+  cursor: pointer;
 }
 /* #endregion */
 
